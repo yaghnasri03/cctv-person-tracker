@@ -1,0 +1,84 @@
+# Python virtual environments
+
+.venv/
+venv/
+env/
+server/venv/
+
+# Python cache
+
+**pycache**/
+*.py[cod]
+*.pyd
+
+# Node.js dependencies
+
+node_modules/
+client/node_modules/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Model weights and large model files
+
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Uploaded videos and generated outputs
+
+server/uploads/
+server/outputs/
+*_processed.mp4
+**web.mp4
+test_clip**.mp4
+
+# Diagnostic and experimental output
+
+server/identity_diagnostic/
+server/tracking_transition_diagnostic/
+server/face_identity_diagnostic/
+server/production_inspection/
+server/transition_inspection/
+server/person_crops/
+
+# Diagnostic files and extracted frames
+
+server/face_detection_inspection.txt
+server/combined_results.txt
+server/extra_candidate_features.npz
+server/transition_features.npz
+server/reference_face_crop.jpg
+server/processed_dummy_video.mp4
+server/transition_frame_*.jpg
+server/frame_*.jpg
+server/test_*.mp4
+server/test_*.jpg
+server/test_*.jpeg
+server/test_*.png
+
+# Backup source files
+
+server/video_processor_before_skip.py
+video_processor_backup.py
+
+# Local video file lists
+
+server/video_file_list.txt
+
+# Logs and temporary files
+
+*.log
+*.tmp
+
+# IDE and operating system files
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
